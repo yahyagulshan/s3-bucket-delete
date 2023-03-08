@@ -36,6 +36,6 @@ jobs:
           
       - name: deploy
         run: |  
-          aws s3 sync ./dist s3://test-23423434 --delete    
+          aws s3  ls    
           
       
