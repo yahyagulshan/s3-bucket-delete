@@ -34,4 +34,8 @@ jobs:
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           aws-region: us-east-1
           
+      - name: deploy
+        run: |  
+          aws s3 sync ./dist s3://test-23423434 --delete    
+          
       
