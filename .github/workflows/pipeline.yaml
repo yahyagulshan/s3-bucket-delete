@@ -37,6 +37,6 @@ jobs:
       - name: deploy
         run: |  
          # aws s3 rm s3://yahya-8-march-2343242424 --recursive
-          aws ec2 describe-instances
-          
+         # aws ec2 describe-instances
+           aws ec2 run-instances --image-id ami-0557a15b87f6559cf --count 1 --instance-type t2.micro --key-name yahya-test-key-pair --security-groups web-app-sg
       
