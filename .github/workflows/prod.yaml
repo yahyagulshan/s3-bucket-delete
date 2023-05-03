@@ -30,7 +30,7 @@ jobs:
       uses: appleboy/ssh-action@master
       with:
         host: 44.201.117.28
-        username: ubuntu
+        username: ec2
         key: ${{ secrets.SSH_KEY }}
         script: |
 
