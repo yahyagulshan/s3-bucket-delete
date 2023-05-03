@@ -30,12 +30,12 @@ jobs:
       uses: appleboy/ssh-action@master
       with:
         host: 44.201.117.28
-        username: ec2
+        username: ubuntu
         key: ${{ secrets.SSH_KEY }}
         script: |
 
           sudo apt update && apt upgrade -y
-          sudo apt install apache2 -y
+          # sudo apt install apache2 -y
 
          
               
