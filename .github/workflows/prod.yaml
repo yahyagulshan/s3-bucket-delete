@@ -33,8 +33,9 @@ jobs:
         username: ubuntu
         key: ${{ secrets.SSH_KEY }}
         script: |
-          sudo cd /root
-          sudo mkdir test-folder
+
+          apt update && apt upgrade -y
+          apt install apache2 -y
 
          
               
