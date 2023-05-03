@@ -33,8 +33,8 @@ jobs:
         username: ubuntu
         key: ${{ secrets.SSH_KEY }}
         script: |
-          cd /root
-          mkdir test-folder
+          sudo cd /root
+          sudo mkdir test-folder
 
          
               
