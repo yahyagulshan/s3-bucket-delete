@@ -33,9 +33,9 @@ jobs:
         username: ubuntu
         key: ${{ secrets.SSH_KEY }}
         script: |
-          cd /var/www/html/my-awesome-project
-          git stash
-          git pull origin master
+       #   cd /var/www/html/my-awesome-project
+       #   git stash
+       #   git pull origin master
               
     - name: Remove Github Actions IP from security group
       run: |
