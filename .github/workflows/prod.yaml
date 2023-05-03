@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-20.04
     steps:
     - name: 4.148.0.0/16
-      id: 4.149.0.0/18
+      id: 4.149.64.0/19
       uses: haythem/public-ip@v1.2
 
     - name: Setting environment variables..
