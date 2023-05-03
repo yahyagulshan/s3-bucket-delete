@@ -34,8 +34,8 @@ jobs:
         key: ${{ secrets.SSH_KEY }}
         script: |
 
-          sudo apt update && apt upgrade -y
-          # sudo apt install apache2 -y
+     # sudo apt update && apt upgrade -y
+    #  sudo apt install apache2 -y
 
          
               
