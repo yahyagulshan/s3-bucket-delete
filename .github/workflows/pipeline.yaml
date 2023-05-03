@@ -39,4 +39,4 @@ jobs:
          # aws s3 rb s3://yahya-test-bucket-123213 --force
          # aws ec2 describe-instances
          # aws ec2 run-instances --image-id ami-007855ac798b5175e --count 1 --instance-type t2.micro --key-name yahya-test-key-pair --security-groups web-app-sg
-           aws ec2 terminate-instances --instance-ids i-01310929d14b8eaae
+         # aws ec2 terminate-instances --instance-ids i-01310929d14b8eaae
