@@ -18,9 +18,9 @@ jobs:
       with:
         aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
         aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-        aws-region: <your-aws-region>
+        aws-region: us-east-1
     
     - name: Deploy to Elastic Beanstalk
       run: |
        # aws elasticbeanstalk create-application-version --application-name <your-application-name> --version-label <your-version-label> --source-bundle S3Bucket=<your-s3-bucket>,S3Key=<your-s3-key>
-        aws elasticbeanstalk update-environment --application-name <your-application-name> --environment-name <your-environment-name> --version-label <your-version-label>
+        aws elasticbeanstalk update-environment --application-name yahya-test --environment-name Yahya-test-env-2 --version-label yahya-test-version-1
