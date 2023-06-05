@@ -21,5 +21,5 @@ jobs:
     
     - name: Deploy to Elastic Beanstalk
       run: |
-       
+        aws elasticbeanstalk create-application-version --application-name yahya-test --version-label yahya-test-version-1 --source-bundle S3Bucket=elasticbeanstalk-us-east-1-553204151928,S3Key=.elasticbeanstalk
         aws elasticbeanstalk update-environment --application-name yahya-test --environment-name Yahya-test-env-2 --version-label yahya-test-version-1 
